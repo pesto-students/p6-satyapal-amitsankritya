@@ -1,0 +1,47 @@
+body {
+    
+}
+
+#app {
+    height: 200px;
+    width: 100%;
+}
+#animation {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#animation div {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes rotateDiv {
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+.red{
+    background-color: red;
+}
+.red:hover{
+    color: aqua;
+    animation-name: rotateDiv;
+    animation-duration: 1s;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
