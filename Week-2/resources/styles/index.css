@@ -1,5 +1,5 @@
 body {
-    
+   
 }
 
 #app {
@@ -31,46 +31,48 @@ p {
 }
 
 #animation:hover > .red{
-    animation-name: openRed;
+    transform: translateX(-100px) rotate(90deg);
+    /* animation-name: openRed;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+}
+
+#animation > .red, .blue, .yellow, .green{
+    transition: transform 1s;
 }
 
 #animation:hover > .blue{
-    animation-name: openBlue;
+    transform: translateX(-100px) rotate(-90deg);
+    /* animation-name: openBlue;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #animation:hover > .yellow{
-    animation-name: openYellow;
+    transform: translateX(100px) rotate(-90deg);
+    /* animation-name: openYellow;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #animation:hover > .green{
-    animation-name: openGreen;
+    transform: translateX(100px) rotate(90deg);
+    /* animation-name: openGreen;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes openRed {
-    100% {
+/* @keyframes openRed {
+    to {
         transform: translateX(-100px) rotate(90deg);
-    }
-}
-
-@keyframes closeRed {
-    100% {
-        transform: translateX(100px) rotate(-90deg);
     }
 }
 
@@ -90,7 +92,7 @@ p {
     to {
         transform: translateX(100px) rotate(90deg);
     }
-}
+} */
 
 #animation div {
     height: 100px;
