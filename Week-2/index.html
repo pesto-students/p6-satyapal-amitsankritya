@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Week 2 of Plus 6 Program | Assignment 2</title>
   <meta name="description" content="Assignment 1 of week 2 excercise">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./resources/styles/index.css?v1.5">
 
 </head>
 
 <body>
     <header>
-        <h1>ASTRO.TRAVEL</h1>
-        <p>Catering Best Experiences in Astro Tourism From A to Z</p>
+        <h1>astro.travel</h1>
+        <p>Catering Best Experiences in Astro Tourism From Moon to Stars</p>
     </header>
     <main>
         <section class="main">
@@ -23,7 +26,7 @@
                         Ut nec dui mollis, maximus erat eget, bibendum odio. Vivamus sed venenatis lacus. Etiam rutrum id urna porta pulvinar. Fusce aliquam diam a sollicitudin pretium. Quisque vitae imperdiet quam. Vestibulum a tincidunt magna. Morbi non blandit massa, a egestas lacus. Etiam et accumsan nisl, vestibulum mattis lacus.
                     </p>
                 </article>
-                <img height="75%" width="90%" src="./resources/images/pexels-stein-egil-liland-1933319.jpg"/>
+                <img height="60%" width="90%" src="./resources/images/pexels-stein-egil-liland-1933319.jpg"/>
             </div>
             <div class="box" style="background-color: white;">
                 <article>
@@ -37,26 +40,140 @@
                     </p>
                 </article>
                 <article>
-                    <h2>Aliquam erat volutpat. Praesent rutrum justo at neque fringilla</h2>
+                    <h2>Aliquam erat volutpat praesent rutrum justo at neque fringilla</h2>
                     <p>
                         Nullam et consectetur augue. Proin egestas, nibh vitae sagittis dictum, dolor quam eleifend erat, vel tristique tortor dui et purus. Integer accumsan, augue eu rhoncus rutrum, ipsum mauris blandit sapien, a aliquet velit turpis et tortor. Donec mattis metus ante, sit amet auctor dolor rhoncus vitae. Suspendisse placerat mauris in rutrum iaculis. Aliquam ultricies, nisi in faucibus facilisis, dui neque maximus nulla, eu suscipit metus libero a mauris. In blandit semper luctus. Aliquam erat volutpat. Praesent rutrum justo at neque fringilla, vitae tincidunt justo porta. Nullam libero nulla, euismod sit amet enim eu, pulvinar cursus erat. Nulla facilisi. In finibus massa velit, at dapibus odio iaculis eu. <a href="#">Read More</a>
                     </p>
                 </article>
             </div>
         </section>
-        <section>
-            <form></form>
+        <section id="form">
+            <div>
+                <h2>Send Your Enquiry</h2>
+                <form>
+                    <div id="form-fields">
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"><label for="title">Title: </label></div>
+                                <div class="form-field radio">
+                                    <label><input name="title" type="radio" value="Mr."> Mr.</label>
+                                    <label><input name="title" type="radio" value="Mrs"> Mrs</label>
+                                    <label><input name="title" type="radio" value="Miss"> Miss</label>
+                                </div>
+                            </div>
+                            <div class="col-50">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"><label for="first-name">First Name: </label></div>
+                                <div class="form-field"><input type="text" value="" name="first-name" id="first-name"></div>
+                            </div>
+                            <div class="col-50">
+                                <div class="label"><label for="last-name">Last Name: </label></div>
+                                <div class="form-field"><input type="text" value="" name="last-name" id="last-name"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"><label for="email">Email: </label></div>
+                                <div class="form-field"><input type="email" value="" name="email" id="email"></div>
+                            </div>
+                            <div class="col-50">
+                                <div class="label"><label for="phone">Phone: </label></div>
+                                <div class="form-field"><input type="number" value="" name="phone" id="phone"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"><label for="password">Password: </label></div>
+                                <div class="form-field"><input type="password" value="" name="password" id="password"></div>
+                            </div>
+                            <div class="col-50">
+                                <div class="label"><label for="confirm-password">Confirm Password: </label></div>
+                                <div class="form-field"><input type="password" value="" name="confirm-password" id="confirm-password"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"><label for="country">Country: </label></div>
+                                <div class="form-field">
+                                    <select name="country" id="country">
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">Italy</option>
+                                        <option value="">France</option>
+                                        <option value="">Canada</option>
+                                        <option value="">Greece</option>
+                                        <option value="">South Africa</option>
+                                        <option value="">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-50">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="label"></div>
+                                <div class="form-field ml--10"><label for="tnc"><input type="checkbox" name="tnc" id="tnc"> I agree to the <a href="#">terms and conditions</a></label></div>
+                            </div>
+                            <div class="col-50">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+
+                            </div>
+                            <div class="col-50">
+                                <div class="form-field el-btn align-right">
+                                    <button class="btn" type="submit"  name="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <!-- <div>
-            astro.travel
+        <div class="footer-logo">
+            <h2>astro.travel</h2>
+                <p>&copy; 2022 | All Rights Reserved</p>
+            </ul>
         </div>
-        <div>
-            Company
+        <div class="footer company">
+            <h3>Company</h3>
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
         </div>
-        <div></div>
-        <div></div> -->
+        <div class="footer social">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Youtube</li>
+                <li>Instagram</li>
+                <li>Social</li>
+            </ul>
+        </div>
+        <div class="footer other">
+            <h3>Other</h3>
+            <ul>
+                <li>Office: Saket, New Delhi, India - 110074</li>
+                <li>Email: contact@astro.travel</li>
+                <li>Phone: 98XXXXXX90</li>
+            </ul>
+            
+        </div>
     </footer>
 </body>
 </html>
