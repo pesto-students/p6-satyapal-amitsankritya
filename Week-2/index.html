@@ -31,18 +31,18 @@
             <div class="box" style="background-color: white;">
                 <article>
                     <h2>Proin elementum vel orci nec viverra</h2>
-                    <p>Sed a nisl odio. Pellentesque mattis aliquet ante in feugiat. Praesent vitae dui ipsum. Phasellus vestibulum pharetra nisl sit amet sagittis. Pellentesque dictum sem sit amet ante molestie aliquet at id tellus. Sed eros tortor, cursus id euismod vitae, tempor sit amet orci. Sed dignissim tincidunt justo eu commodo. Morbi sit amet mollis dui. Morbi at maximus elit. Proin elementum vel orci nec viverra. Morbi maximus nulla nunc, a faucibus est sodales ut. Integer id quam fermentum, maximus lacus id, dapibus risus. Sed ac consequat sapien, at convallis ipsum. Pellentesque tristique sollicitudin neque, posuere varius neque fermentum in. Ut non feugiat odio, dapibus gravida felis. <a href="#">Read More</a></p>
+                    <p>Sed a nisl odio. Pellentesque mattis aliquet ante in feugiat. Praesent vitae dui ipsum. Phasellus vestibulum pharetra nisl sit amet sagittis. Pellentesque dictum sem sit amet ante molestie aliquet at id tellus. Sed eros tortor, cursus id euismod vitae, tempor sit amet orci. Sed dignissim tincidunt justo eu commodo. Morbi sit amet mollis dui. Morbi at maximus elit. Proin elementum vel orci nec viverra. Morbi maximus nulla nunc, a faucibus est sodales ut. Integer id quam fermentum, maximus lacus id, dapibus risus. Sed ac consequat sapien, at convallis ipsum. <a href="#">Read More</a></p>
                 </article>
                 <article>
                     <h2>Donec nec metus quis justo auctor tempus quis at tortor</h2>
                     <p>
-                        Praesent nunc mi, iaculis in purus sed, hendrerit dapibus mauris. Nam sit amet consequat neque. Proin dui ipsum, porttitor non fringilla vel, imperdiet sit amet tortor. Praesent facilisis sed sapien ut pellentesque. Donec vel diam sed erat venenatis luctus eu nec arcu. Mauris vel quam leo. Curabitur rhoncus magna vel quam dictum, vel bibendum tellus molestie. Donec nec metus quis justo auctor tempus quis at tortor. Pellentesque tempus varius erat elementum viverra. Maecenas ut eleifend orci. Nam ut consectetur ex, in dignissim ligula. Nulla eget tempor risus. Morbi ac lacus interdum, aliquam odio sed, ultrices massa. <a href="#">Read More</a>
+                        Praesent nunc mi, iaculis in purus sed, hendrerit dapibus mauris. Nam sit amet consequat neque. Proin dui ipsum, porttitor non fringilla vel, imperdiet sit amet tortor. Praesent facilisis sed sapien ut pellentesque. Donec vel diam sed erat venenatis luctus eu nec arcu. Mauris vel quam leo. Curabitur rhoncus magna vel quam dictum, vel bibendum tellus molestie. Donec nec metus quis justo auctor tempus quis at tortor. Pellentesque tempus varius erat elementum viverra. Maecenas ut eleifend orci. Nam ut consectetur ex, in dignissim ligula. <a href="#">Read More</a>
                     </p>
                 </article>
                 <article>
                     <h2>Aliquam erat volutpat praesent rutrum justo at neque fringilla</h2>
                     <p>
-                        Nullam et consectetur augue. Proin egestas, nibh vitae sagittis dictum, dolor quam eleifend erat, vel tristique tortor dui et purus. Integer accumsan, augue eu rhoncus rutrum, ipsum mauris blandit sapien, a aliquet velit turpis et tortor. Donec mattis metus ante, sit amet auctor dolor rhoncus vitae. Suspendisse placerat mauris in rutrum iaculis. Aliquam ultricies, nisi in faucibus facilisis, dui neque maximus nulla, eu suscipit metus libero a mauris. In blandit semper luctus. Aliquam erat volutpat. Praesent rutrum justo at neque fringilla, vitae tincidunt justo porta. Nullam libero nulla, euismod sit amet enim eu, pulvinar cursus erat. Nulla facilisi. In finibus massa velit, at dapibus odio iaculis eu. <a href="#">Read More</a>
+                        Nullam et consectetur augue. Proin egestas, nibh vitae sagittis dictum, dolor quam eleifend erat, vel tristique tortor dui et purus. Integer accumsan, augue eu rhoncus rutrum, ipsum mauris blandit sapien, a aliquet velit turpis et tortor. Donec mattis metus ante, sit amet auctor dolor rhoncus vitae. Suspendisse placerat mauris in rutrum iaculis. Aliquam ultricies, nisi in faucibus facilisis, dui neque maximus nulla, eu suscipit metus libero a mauris. In blandit semper luctus. Aliquam erat volutpat. Praesent rutrum justo at neque fringilla, vitae tincidunt justo porta. <a href="#">Read More</a>
                     </p>
                 </article>
             </div>
@@ -50,57 +50,57 @@
         <section id="form">
             <div>
                 <h2>Send Your Enquiry</h2>
-                <form>
+                <form method="post" target="/">
                     <div id="form-fields">
                         <div class="row">
-                            <div class="col-50">
-                                <div class="label"><label for="title">Title: </label></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="title">Title: </label></div>
                                 <div class="form-field radio">
-                                    <label><input name="title" type="radio" value="Mr."> Mr.</label>
-                                    <label><input name="title" type="radio" value="Mrs"> Mrs</label>
-                                    <label><input name="title" type="radio" value="Miss"> Miss</label>
+                                    <label><input name="title" type="radio" value="Mr." required> Mr.</label>
+                                    <label><input name="title" type="radio" value="Mrs" required> Mrs</label>
+                                    <label><input name="title" type="radio" value="Miss" required> Miss</label>
                                 </div>
                             </div>
-                            <div class="col-50">
+                            <div class="col-50 ">
 
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-50">
-                                <div class="label"><label for="first-name">First Name: </label></div>
-                                <div class="form-field"><input type="text" value="" name="first-name" id="first-name"></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="first-name">First Name: </label></div>
+                                <div class="form-field"><input type="text" value="" name="first-name" id="first-name" required></div>
                             </div>
-                            <div class="col-50">
-                                <div class="label"><label for="last-name">Last Name: </label></div>
-                                <div class="form-field"><input type="text" value="" name="last-name" id="last-name"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-50">
-                                <div class="label"><label for="email">Email: </label></div>
-                                <div class="form-field"><input type="email" value="" name="email" id="email"></div>
-                            </div>
-                            <div class="col-50">
-                                <div class="label"><label for="phone">Phone: </label></div>
-                                <div class="form-field"><input type="number" value="" name="phone" id="phone"></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="last-name">Last Name: </label></div>
+                                <div class="form-field"><input type="text" value="" name="last-name" id="last-name" required></div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-50">
-                                <div class="label"><label for="password">Password: </label></div>
-                                <div class="form-field"><input type="password" value="" name="password" id="password"></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="email">Email: </label></div>
+                                <div class="form-field"><input type="email" value="" name="email" id="email" required></div>
                             </div>
-                            <div class="col-50">
-                                <div class="label"><label for="confirm-password">Confirm Password: </label></div>
-                                <div class="form-field"><input type="password" value="" name="confirm-password" id="confirm-password"></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="phone">Phone: </label></div>
+                                <div class="form-field"><input type="text" value="" name="phone" id="phone" pattern="[7-9]{1}[0-9]{9}" required></div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-50">
-                                <div class="label"><label for="country">Country: </label></div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="password">Password: </label></div>
+                                <div class="form-field"><input type="password" value="" name="password" id="password" required></div>
+                            </div>
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="confirm-password">Confirm Password: </label></div>
+                                <div class="form-field"><input type="password" value="" name="confirm-password" id="confirm-password" required></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50 md-col-100">
+                                <div class="label"><label class="required" for="country">Country: </label></div>
                                 <div class="form-field">
-                                    <select name="country" id="country">
+                                    <select name="country" id="country" required>
                                         <option value="">India</option>
                                         <option value="">USA</option>
                                         <option value="">Italy</option>
@@ -117,20 +117,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-50">
-                                <div class="label"></div>
-                                <div class="form-field ml--10"><label for="tnc"><input type="checkbox" name="tnc" id="tnc"> I agree to the <a href="#">terms and conditions</a></label></div>
-                            </div>
-                            <div class="col-50">
-
+                            <div class="col-100">
+                                <div class="form-field"><label class="required" for="tnc"><input  type="checkbox" name="tnc" id="tnc" required> I agree to the <a href="#">terms and conditions</a></label></div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-50">
-
-                            </div>
-                            <div class="col-50">
+                            <div class="col-100 align-flex-right">
                                 <div class="form-field el-btn align-right">
                                     <button class="btn" type="submit"  name="submit">Submit</button>
                                 </div>
