@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playlist</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #000000;
+        }
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100%;
+            background: lightgrey;
+        }
+
+        main {
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            background: #565656;
+            height: 300px;
+            width: 100%;
+        }
+        
+        .playlist-banner {
+            padding-left: 25px;
+            margin-left: 50px;
+            padding-top: 25px;
+            margin-right: 5%;
+        }
+
+        .playing {
+            position: fixed;
+            background: #3b5389;
+            height: 100px;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .playing-banner {
+            padding-left: 75px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            height: -webkit-fill-available;
+            width: fit-content;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            line-height: 5;
+        }
+
+        .plyalist-details {
+            display: inline;
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            color: white;
+        }
+
+        .playing-details {
+            display: inline;
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            color: white;
+        }
+        
+        .plyalist-details ul {
+            list-style-type: none;
+            display: flex;
+            margin:0;
+            padding:0;
+            list-style:none;
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .plyalist-details ul li{
+            margin-right: 15px;
+        }
+
+        h1 {
+            margin-top: 30px
+        }
+
+        ul.action {
+            padding-left: 0;
+        }
+
+        table {
+            width: 100%;
+            margin: 10px 10px 10px 75px;
+            border-collapse: collapse
+        }
+
+        tr {
+            line-height: 3;
+        }
+        tr:nth-child(even) {background: #efefef;}
+
+        td a {
+            border: 1px black;
+            border: solid 1px black;
+            text-decoration-line: none;
+        }
+
+        td {
+            padding-left: 10px;
+        }
+
+        .playing-details h4, .playing-details p {
+            padding-left: 25px;
+        }
+
+        .playing-details ul {
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            top: 25px;
+            right: 0;
+            flex-direction: row;
+        }
+
+        .playing-details ul li {
+            letter-spacing: 15em;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main>
+        <section>
+            <section class="container">
+                <aside>
+                    <nav>
+                        <ul>
+                            <li><i class="las la-bars"></i></li>
+                            <li><i class="las la-home"></i></li>
+                            <li><i class="las la-search"></i></li>
+                            <li><i class="las la-volume-up"></i></li>
+                            <li><i class="las la-user"></i></li>
+                            <li><i class="lab la-spotify"></i></li>
+                            <li><i class="las la-cog"></i></li>
+                            <li><i class="lab la-soundcloud"></i></li>
+                        </ul>
+                        </nav>
+                    </aside>
+                <section>
+                    <img class="playlist-banner" src="https://vif1g.csb.app/src/assets/cattyboard.jpg">
+                    <div class="plyalist-details">
+                        <h1>CattyBoard Top 100 Single Charts(11.06.36)</h1>
+                        <p>Unknown Artist</p>
+                        <p>2016.Charts. 100 Songs</p>
+
+                        <ul class="action">
+                            <li><i class="las la-play"></i> Play All</li>
+                            <li><i class="las la-plus"></i> Add To</li>
+                            <li><i class="las la-ellipsis-h"></i> More</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+                
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1. One Dance</td>
+                            <td>Crake feat. CatKid & Cyla</td>
+                            <td>2:54</td>
+                            <td><a href="#">CATTY CLOUD SYNC</a></td>
+                        </tr>
+                        <tr>
+                            <td>2. Panda</td>
+                            <td>Cattee</td>
+                            <td>2:54</td>
+                            <td><a href="#">CATTY CLOUD SYNC</a></td>
+                        </tr>
+                        <tr>
+                            <td>3. Can't Stop The Feeling!</td>
+                            <td>Catin Cimberlake</td>
+                            <td>2:54</td>
+                            <td><a href="#">CATTY CLOUD SYNC</a></td>
+                        </tr>
+                        <tr>
+                            <td>4. Work From Home</td>
+                            <td>Cat Harmony feat Colla</td>
+                            <td>2:54</td>
+                            <td><a href="#">CATTY CLOUD SYNC</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <section>
+                <div class="playing">
+                    <img class="playing-banner" src="https://vif1g.csb.app/src/assets/cattyboard.jpg">
+                    <div class="playing-details">
+                        <h4>If It Ain't Love</h4>
+                        <p>Catsun Derulo</p>
+                        <ul>
+                            <li><i class="las la-step-backward"></i></li>
+                            <li><i class="las la-pause"></i></li>
+                            <li><i class="las la-step-forward"></i></li>
+                            <li><i class="las la-redo-alt"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
