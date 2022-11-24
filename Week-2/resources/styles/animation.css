@@ -1,0 +1,116 @@
+body {
+   
+}
+
+#app {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#app > div {
+    height: 200px;
+    width: 200px;
+}
+
+#animation{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+p {
+    position: absolute;
+    z-index: -1;
+    margin-left: 90px;
+    margin-top: 90px;
+}
+
+#animation:hover > .red{
+    transform: translateX(-100px) rotate(90deg);
+    /* animation-name: openRed;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+#animation > .red, .blue, .yellow, .green{
+    transition: transform 1s;
+}
+
+#animation:hover > .blue{
+    transform: translateX(-100px) rotate(-90deg);
+    /* animation-name: openBlue;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+#animation:hover > .yellow{
+    transform: translateX(100px) rotate(-90deg);
+    /* animation-name: openYellow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+#animation:hover > .green{
+    transform: translateX(100px) rotate(90deg);
+    /* animation-name: openGreen;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+/* @keyframes openRed {
+    to {
+        transform: translateX(-100px) rotate(90deg);
+    }
+}
+
+@keyframes openBlue {
+    to {
+        transform: translateX(-100px) rotate(-90deg);
+    }
+}
+
+@keyframes openYellow {
+    to {
+        transform: translateX(100px) rotate(-90deg);
+    }
+}
+
+@keyframes openGreen {
+    to {
+        transform: translateX(100px) rotate(90deg);
+    }
+} */
+
+#animation div {
+    height: 100px;
+    width: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
