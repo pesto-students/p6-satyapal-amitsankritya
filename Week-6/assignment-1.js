@@ -39,5 +39,4 @@ const maxSum = function(arr) {
   return sum;
 }
 
-
-console.log(maxSum(arr1));
+console.log(maxSum(arr1)); // not able to get the return value if arrow function is used
