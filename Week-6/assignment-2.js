@@ -11,9 +11,9 @@
 // i = 0, j = 0
 // 00, 01, 02 => j = n-1 (first row)
 // 12, 22 => i = m - 1 (last column)
-// 21, 20 => j = 0 (last row)
-// 10, 11 => 
-
+// 21, 20 => j = 0 (last row. skip the element that is already printed)
+// 10, 11 => (last column. skip the element that is already printed)
+    
 let arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ];
 let m = n = 3;
 let spiral = [];
