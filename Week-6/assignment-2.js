@@ -31,23 +31,24 @@ function getSpiral(arr, i, j, m, n,) {
     }
 
     // print last row
-
-    for(let x = j+1; x >= 0; x--) {
-        if(m-1 != x) {
-            console.log(m-1+""+x+" "+n);
+    if((m-1) != i) {
+        for(let x = m-2; x >= j; x--) {
             spiral.push(arr[m-1][x]);
         }
     }
+    
 
     // print first column
-    for(let x = n - 1; x >= 0; x--) {
-        if(m-1 != x) {
-            console.log(x+""+j+" "+m);
+    if((n-1) != j) {
+        for(let x = n-2; x >= i; x--) {
             spiral.push(arr[x][j]);
-        }
+        }    
     }
-
     return spiral;
 }
 
 console.log(getSpiral(arr, 0, 0, m, n));
+
+
+// Time Complexity O(m*n)
+// Space Complexity O(1)
