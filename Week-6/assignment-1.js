@@ -12,29 +12,21 @@ const maxSum = function(arr) {
   for (let i = 0; i < arr.length; i++) {
   
     tempSum += arr[i];
-    // tempArr.push(arr[i]);
 
     if(tempSum < 0) {
-      console.log("tempsum is lower than 0");
       tempSum = 0;
     }
 
     if(sum < tempSum) {
-      //temp[i] = tempArr;
-      console.log(" Temp Sum is greater");
       sum = tempSum;
-    } else {
-      //tempArr.pop();
     }
       
   }
-
-  // console.log(temp);
 
   return sum;
 }
 
 console.log(maxSum(arr1)); // not able to get the return value if arrow function is used
 
-// Time Complexity of above solution is O(n)
+// Time Complexity: O(n)
 // Space Complexity O(1)

@@ -41,7 +41,7 @@ function sort(arr) {
 console.log(sort(arr));
 
 
-// Time Complexity O(N)
+// Time Complexity O(N) (N+N = 2N, constant will not be considered so O(N)
 // Space Complexity O(1)
 
 // Note: Not sure if this is the expected solution
